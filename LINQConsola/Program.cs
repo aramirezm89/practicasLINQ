@@ -131,7 +131,11 @@ namespace LINQConsola
 
 
 
-            LinqToString.ReordenarListado("../../Archivos/Listado.csv");
+            //LinqToString.ReordenarListado("../../Archivos/Listado.csv");
+
+            var ensamblado = new LinqToReflection("MiLibreria");
+
+            ensamblado.getInfo();
 
             Console.ReadKey();
 
