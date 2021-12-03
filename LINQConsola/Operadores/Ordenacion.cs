@@ -31,34 +31,34 @@ namespace LINQConsola.Operadores
 
 
 
-            using (var db = new CursosVirtualesEntities1())
-            {
-                IEnumerable<Cursos> listaCurso = /*db.Cursos.OrderByDescending(c => c.Idioma).ThenByDescending(c => c.Nombre) ;*/
-                    from curso in db.Cursos
-                    orderby curso.Idioma descending, curso.Nombre descending
-                    select curso;
+            //using (var db = new CursosVirtualesEntities1())
+            //{
+            //    IEnumerable<Cursos> listaCurso = /*db.Cursos.OrderByDescending(c => c.Idioma).ThenByDescending(c => c.Nombre) ;*/
+            //        from curso in db.Cursos
+            //        orderby curso.Idioma descending, curso.Nombre descending
+            //        select curso;
 
 
 
-                foreach (var curso in listaCurso)
-                {
-                    Console.WriteLine($"Idioma: {curso.Idioma}, Nombre: {curso.Nombre}, Fecha Registro: {curso.FechaRegistro}");
-                }
+            //    foreach (var curso in listaCurso)
+            //    {
+            //        Console.WriteLine($"Idioma: {curso.Idioma}, Nombre: {curso.Nombre}, Fecha Registro: {curso.FechaRegistro}");
+            //    }
 
-                var continentes = db.Continentes;
+            //    var continentes = db.Continentes;
 
-                foreach (var continente in continentes)
-                {
-                    Console.WriteLine($"ID: {continente.ContinenteId}, NOMBRE: {continente.Nombre}");
-                }
+            //    foreach (var continente in continentes)
+            //    {
+            //        Console.WriteLine($"ID: {continente.ContinenteId}, NOMBRE: {continente.Nombre}");
+            //    }
 
-                Console.WriteLine("\n");
-                var continentesReverse = db.Continentes.AsEnumerable().Reverse();
-                foreach (var continente in continentesReverse)
-                {
-                    Console.WriteLine($"ID: {continente.ContinenteId}, NOMBRE: {continente.Nombre}");
-                }
-            }
+            //    Console.WriteLine("\n");
+            //    var continentesReverse = db.Continentes.AsEnumerable().Reverse();
+            //    foreach (var continente in continentesReverse)
+            //    {
+            //        Console.WriteLine($"ID: {continente.ContinenteId}, NOMBRE: {continente.Nombre}");
+            //    }
+            //}
 
              
 

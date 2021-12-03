@@ -133,9 +133,25 @@ namespace LINQConsola
 
             //LinqToString.ReordenarListado("../../Archivos/Listado.csv");
 
-            var ensamblado = new LinqToReflection("MiLibreria");
+            //var ensamblado = new LinqToReflection("MiLibreria");
 
-            ensamblado.getInfo();
+
+            //ensamblado.getInfo();
+
+            //LinqToFileDirectories.BuscarArchivosDirectorio(@"C:\Users\metal\Downloads", ".rar");
+            //LinqToFileDirectories.ObtenerTotalBytesCarpeta(@"C:\Users\metal\Downloads");
+            //LinqToFileDirectories.BuscarTextoEnArchivos("../../Archivos/", "cursoLINQ", ".txt");
+
+            //LinqToObject.LinqConObjetos();
+
+
+            //new LinqToArrayList().ObtenerEstudiantes();
+
+            //LinqToSql.Agregar();
+            //LinqToSql.Actualizar(125);
+            LinqToSql.Eliminar(125);
+
+           
 
             Console.ReadKey();
 
