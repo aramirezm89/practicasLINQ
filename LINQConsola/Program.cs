@@ -13,7 +13,7 @@ namespace LINQConsola
     class Program
     {
         private readonly CursosVirtualesEntities1 _db;
-       
+
         static void Main(string[] args)
         {
 
@@ -149,7 +149,36 @@ namespace LINQConsola
 
             //LinqToSql.Agregar();
             //LinqToSql.Actualizar(125);
-            LinqToSql.Eliminar(125);
+            //LinqToSql.Eliminar();
+
+            //Calculadora.calcular(1, 3, 2);
+
+           int num1, num2,opcion;
+
+            Console.WriteLine("ingrese numero 1");
+            num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese numero2");
+            num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese opcion");
+            opcion = int.Parse(Console.ReadLine());
+
+            if(opcion == 1)
+            {
+                Calculadora.Sumar(num1, num2);
+            }
+            else if(opcion == 2)
+            {
+                Calculadora.Restar(num1,num2);
+
+            }else if(opcion == 3)
+            {
+                Calculadora.Multiplicar(num1,num2);
+            }
+            else if(opcion == 4)
+            {
+               Calculadora.Dividir(num1,num2);  
+            }
+
 
            
 
@@ -158,8 +187,7 @@ namespace LINQConsola
         }
 
 
-
-
+       
 
     }
 

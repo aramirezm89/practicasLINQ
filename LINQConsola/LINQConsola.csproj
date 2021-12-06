@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cuantificadores.cs" />
+    <Compile Include="Fuentes\Calculadora.cs" />
     <Compile Include="Fuentes\LinqToArrayList.cs" />
     <Compile Include="Fuentes\LinqToFileDirectories.cs" />
     <Compile Include="Fuentes\LinqToObject.cs" />
